@@ -1,0 +1,50 @@
+
+<!--     suite name="beforesuite" parallel="tests"   DEV1 UK                            -->
+
+<suite name="beforesuite" parallel="none">
+
+
+ 
+<!-- CelsiusToFarenheit  -->
+
+ 
+ <test name="CelsiusToFarenheit">
+ <parameter name="browser" value="chrome" />
+  <parameter name="env" value="https://www.metric-conversions.org/" />
+   <parameter name="flow" value="CelsiusToFarenheit" />
+   <parameter name="SourceToConvert" value="Celsius" />
+   <parameter name="datavalue" value="40" />
+    <classes>
+	 	<class name="Ben.MetricConversion" />
+	 </classes>
+ </test>
+  
+ <!-- MetersToFeet  -->
+
+ <test name="MetersToFeet">
+ <parameter name="browser" value="chrome" />
+  <parameter name="env" value="https://www.metric-conversions.org/" />
+   <parameter name="flow" value="MetersToFeet" />
+   <parameter name="SourceToConvert" value="Meters" />
+   <parameter name="datavalue" value="40" />
+    <classes>
+	 	<class name="Ben.MetricConversion" />
+	 </classes>
+ </test>
+ 
+  <!-- MetersToFeet  -->
+
+ <test name="OuncesToGrams">
+ <parameter name="browser" value="chrome" />
+  <parameter name="env" value="https://www.metric-conversions.org/" />
+   <parameter name="flow" value="OuncesToGrams" />
+   <parameter name="SourceToConvert" value="Meters" />
+   <parameter name="datavalue" value="40" />
+    <classes>
+	 	<class name="Ben.MetricConversion" />
+	 </classes>
+ </test>
+
+
+
+</suite>
